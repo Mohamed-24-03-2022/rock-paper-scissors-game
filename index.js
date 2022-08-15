@@ -17,7 +17,7 @@ const playRound = (playerSelection, computerSelection) => {
         (playerSelection === "paper" && computerSelection === "scissors") ||
         (playerSelection === "rock" && computerSelection === "paper")
     ) {
-        return `You Lose! ${playerSelection} beats ${computerSelection}`;
+        return `You Lose! ${computerSelection} beats ${playerSelection}`;
     }
     else if (
         (playerSelection === "rock" && computerSelection === "scissors") ||
@@ -30,7 +30,7 @@ const playRound = (playerSelection, computerSelection) => {
         return "Draw!";
     }
     else {
-        return "Invalid Input, try again with a proper choice";
+        return "Invalid Input, try again with a valid choice";
     }
 };
 
