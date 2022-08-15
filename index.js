@@ -17,20 +17,20 @@ const playRound = (playerSelection, computerSelection) => {
         (playerSelection === "paper" && computerSelection === "scissors") ||
         (playerSelection === "rock" && computerSelection === "paper")
     ) {
-        return "You Lose! Rock beats Scissors";
+        return `You Lose! ${playerSelection} beats ${computerSelection}`;
     }
     else if (
         (playerSelection === "rock" && computerSelection === "scissors") ||
         (playerSelection === "scissors" && computerSelection === "paper") ||
         (playerSelection === "paper" && computerSelection === "rock")
     ) {
-        return "You Win! Rock beats Scissors";
+        return `You Win! ${playerSelection} beats ${computerSelection}`
     }
     else if (playerSelection === computerSelection) {
         return "Draw!";
     }
     else {
-        return "Invalid Input";
+        return "Invalid Input, try again with a proper choice";
     }
 };
 
